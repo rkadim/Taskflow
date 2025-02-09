@@ -1,4 +1,4 @@
-namespace TaskFlow;
+namespace Taskflow.Models;
 
 public class User
 {

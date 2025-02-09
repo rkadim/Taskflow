@@ -1,4 +1,6 @@
-namespace TaskFlow;
+using Taskflow.Models;
+
+namespace Taskflow.Handlers;
 
 public abstract class BaseTaskHandler : ITaskHandler
 {
@@ -9,7 +11,7 @@ public abstract class BaseTaskHandler : ITaskHandler
         NextHandler = next;
     }
 
-    public virtual void Handle(TaskItem task)
+    public virtual void Handle(TaskItemModel task)
     {
         NextHandler?.Handle(task);
     }    

@@ -1,9 +1,11 @@
-namespace TaskFlow;
+using Taskflow.Models;
+
+namespace Taskflow.Handlers;
 
 // Task validation handler
 public class ValidationTaskHandler : BaseTaskHandler
 {
-    public override void Handle(TaskItem task)
+    public override void Handle(TaskItemModel task)
     {
         if (string.IsNullOrWhiteSpace(task.Title))
         {
